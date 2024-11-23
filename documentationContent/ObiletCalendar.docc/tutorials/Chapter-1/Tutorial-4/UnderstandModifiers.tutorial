@@ -1,0 +1,107 @@
+@Tutorial(time: 2) {
+    @Intro(title: "Understand Modifiers") {
+        
+        
+    }
+    @Section(title: "Day Modifier") {
+        @ContentAndMedia {
+            This modifier modifies view of day
+        }
+        
+        @Steps {
+            @Step {
+                Create default ``OBCalendar`` and use it in `body`.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s1-s1.swift){
+                    @Image(source:c1-t4-s1-s1.png)
+                }
+            }
+            
+            @Step {
+                You can modify view of every day using  [dayModifier](<doc:OBCalendar/dayModifier(_:)>)
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s1-s2.swift){
+                    @Image(source:c1-t4-s1-s2.png)
+                }
+            }
+            
+
+        }
+    }
+    
+    @Section(title: "Include Parameter") {
+        @ContentAndMedia {
+            If you want that calendar includes previous and next monhth's blank, create ``OBCalendar`` with `includeBlank` as true.
+        }
+        
+        @Steps {
+            @Step {
+                ``OBCalendar`` is initialized with `isBlank` as `false`
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s2-s1.swift){
+                    @Image(source:c1-t4-s2-s1.png)
+                }
+            }
+            
+            @Step {
+                ``OBCalendar`` is initialized with `isBlank` as `true`
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s2-s2.swift){
+                    @Image(source:c1-t4-s2-s2.png)
+                }
+            }
+            
+
+        }
+    }   
+    
+   
+    @Section(title: "Month Modifier") {
+        @ContentAndMedia {
+            
+        }
+        
+        @Steps {
+            @Step {
+                Create default ``OBCalendar`` and use it in `body`.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s3-s1.swift){
+                    @Image(source:c1-t4-s3-s1.png)
+                }
+            }
+            @Step {
+                You can modify view of months using [monthModifier](<doc:OBCalendar/monthModifier(_:)>)
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s3-s2.swift){
+                    @Image(source:c1-t4-s3-s2.png)
+                }
+            }            
+
+        }
+    } 
+    @Section(title: "Modified Day + Modified Month") {
+        @ContentAndMedia {
+            You can modify `dayView` and `monthView`.
+            
+<!--            @Image(source: <#file#>, alt: "<#accessible description#>")-->
+        }
+        
+        @Steps {
+            @Step {
+                Modify calendar with [dayModifier](<doc:OBCalendar/dayModifier(_:)>) and [monthModifier](<doc:OBCalendar/monthModifier(_:)>).                 
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s4-s1.swift){
+                    @Image(source:c1-t4-s4-s1.png)
+                }
+            }
+            @Step {
+                You can modify view of months using [monthModifier](<doc:OBCalendar/monthModifier(_:)>)
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t4-s4-s2.swift){
+                    @Image(source:c1-t4-s4-s2.png)
+                }
+            }            
+
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+@Tutorial(time: "10") {
+    @Intro(title: "Improve User Interface") {
+        Improve the user interface by adding weekdays and a header view.
+        
+    }
+    
+    @Section(title: "Add Weekdays View") {
+        @ContentAndMedia {
+            Create weekdays view and add.
+            
+        }
+        
+        @Steps {
+            @Step {
+                Add `calendar` varible and take it from initializer.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c2-t1-s1-s1.swift){
+                    @Image(source:c2-t1-s1-s1.png)
+                }
+            }
+            @Step {
+                Add `daysView` and `getShortLocalizedWeekdays` function and use it.                
+                @Code(name: "OBCalendarDemo.swift", file: c2-t1-s1-s2.swift){
+                    @Image(source:c2-t1-s1-s2.png)
+                }
+            }  
+            @Step {
+                Add `headerView` and use it.                
+                @Code(name: "OBCalendarDemo.swift", file: c2-t1-s1-s3.swift){
+                    @Image(source:c2-t1-s1-s3.png)
+                }
+            }
+            @Step {
+                Add extension for get color easily and use it.                
+                @Code(name: "OBCalendarDemo.swift", file: c2-t1-s1-s4.swift){
+                    @Image(source:c2-t1-s1-s4.png)
+                }
+            }
+            @Step {
+                Change background color of `headerView`, add shadow to daysView and do some changes.               
+                @Code(name: "OBCalendarDemo.swift", file: c2-t1-s1-s5.swift){
+                    @Image(source:c2-t1-s1-s5.png)
+                }
+            }
+            
+
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Base View") {
+        
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Section(title: "Add a Base view") {
+        @ContentAndMedia {
+            Add the ability for users to customize calendar
+            
+            <!--            @Image(source: <#file#>, alt: "<#accessible description#>")-->
+        }
+        
+        @Steps {
+            @Step {
+                Create a new SwiftUI View file named OBCalendarDemo.swift
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t2-s1-s1.swift){
+                    @Image(source:c1-t2-s1-s1.png)
+                }
+            }
+            
+            @Step {
+                import ObiletCalendar
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t2-s1-s2.swift){
+                    @Image(source:c1-t2-s1-s2.png)
+                }
+            } 
+            
+            @Step {
+                Create `calendarView` and use it in body.
+                
+                ``OBCalendar`` creates calendar from `today` to `one year later` default.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t2-s1-s3.swift){
+                    @Image(source:c1-t2-s1-s3.png)
+                }
+            }
+            
+        }
+    }
+    
+    @Section(title: "Explore a Base View Range") {
+        @ContentAndMedia {
+            Explore a Base View Range
+            
+            <!--            @Image(source: <#file#>, alt: "<#accessible description#>")-->
+        }
+        
+        @Steps {
+            
+            @Step {
+                You dont have to create calendar as 1 year. You can create calendar using  ``CalendarDrawRange`` type.
+                
+                For example, when use  `.month(1)` ``OBCalendar`` calculate `endDate` and assign last date of month.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t2-s2-s1.swift){
+                    @Image(source:c1-t2-s2-s1.png)
+                }
+                
+            }             
+        }
+    }
+}
+}

@@ -1,0 +1,26 @@
+@Tutorial(time: 1) {
+    @Intro(title: "Change Day View") {
+    }
+    
+    @Section(title: "Hide Some Days") {
+        @ContentAndMedia {
+            Hide Some Days
+        }
+        
+        @Steps {
+            @Step {
+                Look at latest state of previous tutorial.               
+                @Code(name: "OBCalendarDemo.swift", file: c2-t2-s1-s1.swift){
+                    @Image(source:c2-t2-s1-s1.png)
+                }
+            }
+            
+            @Step {
+                If day is in currentMonth and date of day less than today , change foregroundColor as gray otherwise show day’s foreground as black.              
+                @Code(name: "OBCalendarDemo.swift", file: c2-t2-s1-s2.swift){
+                    @Image(source:c2-t2-s1-s2.png)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Understand BaseCalendar") {
+        You can more manage your calendar using ``OBBaseCalendar``.If you previous steps are enough for you, you can skip this section.
+    }
+    
+    @Section(title: "OBBaseCalendar") {
+        @ContentAndMedia {
+            You can init `calendar` with using ``OBBaseCalendar`` 2 ways.
+            - You can give `startDate` and `endDate` to [init](<doc:OBBaseCalendar/init(calendar:startDate:endDate:lazyYears:lazyMonths:lazyDays:dayScrollEnabled:dayScrollAxis:dayGridItems:monthScrollEnabled:monthScrollAxis:monthGridItems:yearScrollEnabled:yearScrollAxis:yearGridItems:dayContent:monthContent:yearContent:)>).
+            - You can give array of [year](<doc:CalendarModel/Year>) to [init](<doc:OBBaseCalendar/init(years:lazyYears:lazyMonths:lazyDays:dayScrollEnabled:dayScrollAxis:dayGridItems:monthScrollEnabled:monthScrollAxis:monthGridItems:yearScrollEnabled:yearScrollAxis:yearGridItems:dayContent:monthContent:yearContent:)>)
+            > ``OBCalendar`` creates array of [year](<doc:CalendarModel/Year>) using `startDate` and `endDate`. <br/>
+            
+            
+
+        }
+        
+        
+        > Our main goal is understand [OBBaseCalendar](<doc:OBBaseCalendar>).If you dont like UI, you must examine [0.1.4 version](https://obilet.github.io/OBCalendarDocument/documentation/obiletcalendar/)
+        
+        @Steps {
+            @Step {
+                Create a new SwiftUI View file named `OBCalendarDemo.swift`
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t3-s1-s1.swift){
+                    @Image(source:c1-t3-s1-s1.png)
+                }
+            }
+            
+            @Step {
+                Add `calendar` variable and take it from initializer.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t3-s1-s2.swift){
+                    @Image(source:c1-t3-s1-s2.png)
+                }
+            } 
+            
+            @Step {
+                Create `calendarView` and use it in body.
+                
+                Create `calendarView` using ``OBBaseCalendar``, give `startDate` and `endDate` to [defaultLayout](<doc:CalendarModelBuilder/defaultLayout(calendar:startDate:endDate:)>) and it returns array of [year](<doc:CalendarModel/Year>). So you can use your custom layout to create array of [year](<doc:CalendarModel/Year>).
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t3-s1-s3.swift){
+                    @Image(source:c1-t3-s1-s3.png)
+                }
+            }
+            
+            @Step {
+                Create `calendarView` and use it in body.
+                
+                Create `calendarView` using ``OBBaseCalendar``, give `startDate` and `endDate` to ``OBBaseCalendar``  
+                
+                @Code(name: "OBCalendarDemo.swift", file: c1-t3-s1-s4.swift){
+                    @Image(source:c1-t3-s1-s4.png)
+                }
+            } 
+            
+            }
+
+        }
+    }
+    
+    
+}
