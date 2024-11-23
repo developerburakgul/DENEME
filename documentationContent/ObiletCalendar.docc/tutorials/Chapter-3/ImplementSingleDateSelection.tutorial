@@ -1,0 +1,74 @@
+@Tutorial(time: 15) {
+    @Intro(title: "Implement Single Date Selection") {
+        Implement single date selection for users can select specific date.
+        
+        
+    }
+    
+    @Section(title: "Refactor Code") {
+        @ContentAndMedia {
+            Refactor Code
+        }
+        @Steps {
+            @Step {
+                Look at latest state of previous chapter.                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s1-s1.swift){
+                    @Image(source:c3-t1-s1-s1.png)
+                }
+            }
+            
+            @Step {
+                Create helper `contentBuilder` function.
+                
+                Create helper `modifyDayView` function that takes model as parameter.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s1-s2.swift){
+                    @Image(source:c3-t1-s1-s2.png)
+                }            
+            } 
+            
+            @Step {
+                Use `contentBuilder` and `modifyDayView`
+                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s1-s3.swift){
+                    @Image(source:c3-t1-s1-s3.png)
+                }            
+            }
+        }
+    }
+        
+        
+    @Section(title: "Implement Single Date") {
+        @ContentAndMedia {
+            Add feature that select single date.
+        }
+        
+        @Steps {
+            @Step {
+                Look at latest state of previous Section.                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s2-s1.swift){
+                    @Image(source:c3-t1-s2-s1.png)
+                }
+            }
+            
+            @Step {
+                In this step, the `firstSelectedDate` property is added to keep track of the user’s selection.
+                
+                The `selectDate(of:)` function is implemented to handle date selection effectively.
+                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s2-s2.swift){
+                    @Image(source:c3-t1-s2-s2.png)
+                }            
+            } 
+            
+            @Step {
+                Update `ModifyDayView` function to show user's selection and add custom background.                
+                @Code(name: "OBCalendarDemo.swift", file: c3-t1-s2-s3.swift){
+                    @Image(source:c3-t1-s2-s3.png)
+                }            
+            }
+        }
+
+    }
+
+}

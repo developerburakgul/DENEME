@@ -1,0 +1,60 @@
+@Tutorials(name: "") {
+    @Intro(title: "Meet ObiletCalendar") {
+        Create easily your custom calendar
+
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Chapter(name: "Create Demo Project") {
+        Create OBCalendarDemo and skeleton of Calendar View
+        
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+        
+        @TutorialReference(tutorial: "doc:SetupEmptyProject")
+        
+        
+        @TutorialReference(tutorial: "doc:CreateBaseView")
+        
+        @TutorialReference(tutorial: "doc:UnderstandModifiers")
+        @TutorialReference(tutorial: "doc:BaseCalendar")
+        
+    }
+    
+    @Chapter(name: "Improve User Interface") {
+        Improve user interface        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+        
+        @TutorialReference(tutorial: "doc:ImproveUserInterface")
+        @TutorialReference(tutorial: "doc:ChangeDayView")
+    } 
+    
+    @Chapter(name: "Implement Date Selection") {
+        Implementation single and double Date selection       
+        
+        @TutorialReference(tutorial: "doc:ImplementSingleDateSelection")
+        @TutorialReference(tutorial: "doc:ImplementDoubleDateSelection")
+        
+    }    
+    @Chapter(name: "Implement Special Day View") {
+        Implement Special Day View      
+        
+        @TutorialReference(tutorial: "doc:ImplementYourCustomSpecialDay")
+        
+    } 
+    
+<!--    @Chapter(name: "Implement Date Selection") {-->
+<!--        Implementation date selection      -->
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+<!--        -->
+<!--        @TutorialReference(tutorial: "doc:CreateSkeletonView-2-(OPTIONAL)")-->
+<!--    }-->
+    
+<!--    @Chapter(name: "Implement Date Selection") {-->
+<!--        Implementation date selection      -->
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+<!--        -->
+<!--        @TutorialReference(tutorial: "doc:<#tutorial name#>")-->
+<!--    }-->
+
+}

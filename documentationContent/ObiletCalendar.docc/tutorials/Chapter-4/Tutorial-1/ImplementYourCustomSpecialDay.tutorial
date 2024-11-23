@@ -1,0 +1,64 @@
+@Tutorial(time: 7) {
+    @Intro(title: "Implement Special Day") {
+            
+    }
+    
+    @Section(title: "Implement Your Custom Special Day") {
+        @ContentAndMedia {
+            Create your custom special day.
+            
+        }
+        
+        @Steps {
+            @Step {
+                Create `OBCalendarWithSpecialDay.swift` file.
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s1.swift){
+                    @Image(source:c4-t1-s1-s1.png)
+                } 
+            }
+            
+            @Step {
+                Update with `contentBuilder` and `modifyDayView`
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s2.swift){
+                    @Image(source:c4-t1-s1-s2.png)
+                } 
+            }
+            
+            @Step {
+                Add `specialDays` variable and take it in initializer.
+                
+                Write extension to create special days
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s3.swift){
+                    @Image(source:c4-t1-s1-s3.png)
+                } 
+            }
+            @Step {
+                Write extension for dictionary
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s4.swift){
+                    @Image(source:c4-t1-s1-s4.png)
+                } 
+            }
+            @Step {
+                Create `modifySpecialDayView(model:content:)` to create small circle in dayView.
+                Use `modifySpecialDayView(model:content:)` in dayView.
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s5.swift){
+                    @Image(source:c4-t1-s1-s5.png)
+                } 
+            }  
+            
+            @Step {
+                Create `makeSpecialDaysView(year:month:)`.
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s6.swift){
+                    @Image(source:c4-t1-s1-s6.png)
+                } 
+            }
+            @Step {
+                Use `modifySpecialDayView(model:content:)` in `monthModifier`.
+                @Code(name: "OBCalendarWithSpecialDay.swift", file: c4-t1-s1-s7.swift){
+                    @Image(source:c4-t1-s1-s7.png)
+                } 
+            }
+            
+        }
+    }
+}

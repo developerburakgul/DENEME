@@ -1,0 +1,28 @@
+@Tutorial(time: 3) {
+    @Intro(title: "Setup Empty Project") {
+        Setup Empty Project
+    }
+    
+    @Section(title: "Create a new project and add ObiletCalendar") {
+        @ContentAndMedia {
+            Create and configure an Xcode project that uses ObiletCalendar.
+        }
+        
+        @Steps {
+            @Step {
+                Create a new project using the iOS App template.
+                @Image(source: c1-t1-s1-s1.png, alt: "")
+            }
+            
+            @Step {
+                Enter ``Your Product Name`` as the Product Name and Select ``SwiftUI`` from the Interface pop-up menu.
+                @Image(source: c1-t1-s1-s2.png, alt: "")
+            }
+            
+            @Step {
+                Add ``ObiletCalendar`` as a dependency to the project.
+                @Image(source: c1-t1-s1-s3.png, alt: "")
+            }
+        }
+    }
+}
